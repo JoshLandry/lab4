@@ -46,6 +46,12 @@ describe("Functional", function() {
   // function argument.
   // TODO: write a test for the custom method you wrote
   // in exercises/functional.js
-  it("should test the exercise you wrote yourself");
+  it("should total the daily points", function() {
+    var newTestData = [ [ 3, 2, 5 ], [ 1, 3, 6 ], [ 2, 4, 2 ], [ 3, 1, 1 ], [ 1, 0, 4 ],
+    [ 1, 2, 2 ], [ 2, 0, 1 ] ],
+    result = functional.josh(newTestData),
+    answer = [ 10, 10, 8, 5, 5, 5, 3 ];
+    expect(result).to.eql(answer);
+  });
 
 });
